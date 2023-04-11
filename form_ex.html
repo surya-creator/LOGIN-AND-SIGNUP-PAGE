@@ -1,0 +1,29 @@
+<!Doctype html>
+<html lan ="en">
+<head>
+<meta charset="uTF-8">
+<title> web login page</title>
+<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+<h1>Web page login</h1>
+<div>
+<form method = "POST">
+    <label>USER NAME </label><br>
+    <input name = "username" type="email" placeholder="write your username"><br><br>
+    <label>PASSWORD </label><br>
+    <input name ="password" type="text" placeholder="write your password"><br><br>
+    <button type ="submit" value="login" > Login</button>  <br><br>
+
+</form>
+</div>
+<div>
+    <form action ="/new">
+        <label>New Here?</label>
+        <input value="Register" type="submit">
+    </form>
+</div>
+</body>
+
+</html>
